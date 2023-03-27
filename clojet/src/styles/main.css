@@ -1,0 +1,269 @@
+main .inner {
+  width: 1350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* ========================== BODY_MAIN ========================== */
+/* =========== 특가 banner  ========== */
+
+main {
+  margin: 0 auto;
+  padding: 0px 0 0 0;
+  box-sizing: border-box;
+}
+
+.main_banner_box1 {
+  position: relative;
+}
+
+.main_banner_box1 img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* .main_banner_box1 {
+  width: auto;
+  height: 600px;
+  margin: 0 auto;
+} */
+
+.empty {
+  width: auto;
+  height: 50px;
+}
+
+/* =========== 특가 products  ========== */
+.main_products1,
+.main_products2,
+.main_products3 {
+  text-align: center;
+}
+
+main h4 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.main_products1 li,
+.main_products2 li,
+.main_products3 li {
+  display: inline-block;
+  margin: 0 20px;
+  font-weight: 700;
+}
+.main_products1 li a,
+.main_products2 li a,
+.main_products3 li a {
+  color: #d6d6d6;
+}
+
+.main_products1 li .Men,
+.main_products2 li .Men,
+.main_products3 li .Men {
+  color: black;
+}
+
+/* =========== 특가 item_list ========== */
+
+.item_list {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 0 50px 10px;
+  width: 100%;
+  /* background-color: antiquewhite; */
+}
+
+.item_list ul {
+  position: relative;
+  padding-left: 50px;
+  width: 200%;
+  left: 100%;
+  transform: translateX(-50%);
+  /* background-color: aqua; */
+  transition: 0.5s;
+}
+
+.item_list li {
+  /* position: relative; */
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 50px;
+  vertical-align: top;
+}
+
+.item_list .item_img a {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+.item_list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item_name a,
+.item_info .disCount,
+.item_name del {
+  font-size: 0.9rem;
+}
+
+.item_info .price:not(del) {
+  font-size: 1.1rem;
+}
+
+.item_info .item_name {
+  color: black;
+  font-size: 1.1rem;
+}
+
+.item_name a {
+  color: black;
+}
+
+.disCount {
+  color: red;
+  font-weight: 700;
+}
+/* =========== 특가 item_list 핸들 ========== */
+
+.item_container1,
+.item_container2,
+.item_container3 {
+  position: relative;
+  width: 100%;
+}
+
+.sales_lady,
+.weather_lady,
+.new_lady {
+  display: none;
+}
+
+/* .sales_men,
+.weather_men,
+.new_men {
+  display: none;
+} */
+
+.item_container1 > a,
+.item_container2 > a,
+.item_container3 > a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  z-index: 2;
+  opacity: 0.3;
+  transition: 0.2s;
+}
+
+.item_container1 > .btn_back,
+.item_container2 > .btn_back,
+.item_container3 > .btn_back {
+  left: -5%;
+  visibility: hidden;
+}
+/* .nonVisible {
+} */
+
+.item_container1 > .btn_back:hover,
+.item_container2 > .btn_back:hover,
+.item_container3 > .btn_back:hover {
+  left: -5%;
+  opacity: 1;
+}
+
+.item_container1 > .btn_foward,
+.item_container2 > .btn_foward,
+.item_container3 > .btn_foward {
+  right: -5.5%;
+}
+
+.item_container1 > .btn_foward:hover,
+.item_container2 > .btn_foward:hover,
+.item_container3 > .btn_foward:hover {
+  right: -5.5%;
+  opacity: 1;
+}
+
+.btn_back > img,
+.btn_foward > img {
+  width: 50px;
+}
+
+/* =========== 계절,신상 큐레이션 banner  ========== */
+.main_banner_box2 {
+  width: 1350px;
+  height: 350p;
+  margin: 0 auto;
+}
+
+/* 
+/* === 상단 이미지 슬라이더 관련 코드=== */
+
+.main_banner_box1 img {
+  width: 1350px;
+  vertical-align: bottom;
+  height: auto;
+}
+
+/*희수 css*/
+/*main-slide 관련부분*/
+
+.slider {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  position: absolute;
+  left: 100%;
+}
+
+.slideBtn {
+  position: absolute;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  cursor: pointer;
+}
+.slideBtn:hover {
+  background-color: rgba(255, 255, 255, 0.393);
+}
+
+.prev {
+  border-radius: 0 25% 25% 0;
+}
+
+.slider .next {
+  right: 0;
+  border-radius: 25% 0 0 25%;
+}
+
+.pager {
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 10px;
+  height: 3.5px;
+  width: 30%;
+}
+
+.pager li {
+  position: relative;
+  height: 100%;
+  width: calc(100% / 3);
+  background-color: black;
+  transition: 1s;
+}

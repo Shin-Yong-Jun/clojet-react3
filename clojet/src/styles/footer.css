@@ -1,0 +1,41 @@
+.footer_top {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_bottom {
+    display: flex;
+}
+.footer_top .footer_logo img {
+    width: 200px;
+}
+
+.footer_top .footer_icon {
+    display: flex;
+    background-color: rebeccapurple;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer_top .footer_icon ul {
+    justify-content: center;
+    display: flex;
+}
+.footer_top .footer_icon img {
+    width: 35px;
+}
+
+/***********************반응형 *********************/
+
+/* 모바일 */
+@media (max-width: 768px) {
+    .footer_bottom .left {
+        display: none;
+    }
+}
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+}
