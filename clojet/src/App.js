@@ -3,8 +3,10 @@ import Footer from './components/footer';
 import Header from './components/header';
 // import Main from './components/Main';
 import Main from './pages/main';
+import Login from './pages/login';
+import Cart from './pages/cart';
+import Mypage from './pages/mypage';
 import CategoryNew from './pages/categoryNew';
-import About from './pages/about';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
             <Routes>
                 <Route path='/' element={<Main />} />
                 <Route path='/categorynew' element={<CategoryNew />} />
-                <Route path='/About' element={<About />} />
+                <Route path='/login' element={<Login />} />
+                <Route path='/cart' element={<Cart />} />
+                <Route path='/mypage' element={<Mypage />} />
             </Routes>
             <Footer />
         </BrowserRouter>
